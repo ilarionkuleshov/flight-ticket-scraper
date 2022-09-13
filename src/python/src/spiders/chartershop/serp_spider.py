@@ -57,7 +57,7 @@ class SerpSpider(TaskToMultipleResultsSpider):
             else:
                 seats = ""
 
-            self.logger.info(f"Parsed serp page {response.url}")
+            self.logger.info(f"Parsed new ticket from page {response.url}")
             yield {
                 "url": response.url,
                 "company": company,
